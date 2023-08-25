@@ -16,6 +16,6 @@ func (s *TransitionSystem) Remove(basic ecs.BasicEntity) {}
 func (s *TransitionSystem) Update(dt float32) {
 	s.elapsed += dt
 	if s.elapsed > s.Delay || engo.Input.Mouse.Action == engo.Press {
-		//engo.SetSceneByName(s.Next, true)
+		engo.SetSceneByName(s.Next, true)
 	}
 }
