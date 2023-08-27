@@ -104,8 +104,6 @@ func (s *MainMenuScene) Setup(u engo.Updater) {
 	}
 	w.AddEntity(&ngButton)
 
-	println(ngButton.Contains(engo.Point{X: -10, Y: -10}))
-
 	//New Game Text
 	ngText := struct {
 		ecs.BasicEntity
@@ -176,7 +174,7 @@ func (s *MainMenuScene) Setup(u engo.Updater) {
 	credButton.OnClick = func() { println("Credits") }
 	w.AddEntity(&credButton)
 
-	//Options Text
+	//Credits Text
 	credText := struct {
 		ecs.BasicEntity
 		common.SpaceComponent
